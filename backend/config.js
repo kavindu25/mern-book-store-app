@@ -1,2 +1,2 @@
-export const PORT = 5555; 
-export const mongoDBURL = 'mongodb+srv://admin:admin123@bookstoremern.k7r3fps.mongodb.net/books-collection?retryWrites=true&w=majority'
+//export const PORT = process.env.PORT; 
+//export const mongoDBURL = `${process.env.MONGODB_URL}`
