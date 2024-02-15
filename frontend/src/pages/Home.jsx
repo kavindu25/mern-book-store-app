@@ -29,29 +29,29 @@ const Home = () => {
 
   return (
     <div className="p-4">
-      <div className="flex justify-center items-center gap-x-4">
-        <button
-          className="bg-sky-300 hover:bg-sky-400 px-4 py-1 rounded-lg"
-          onClick={() => {
-            setViewType("table");
-          }}
-        >
-          Table
-        </button>
-        <button
-          className="bg-sky-300 hover:bg-sky-400 px-4 py-1 rounded-lg"
-          onClick={() => {
-            setViewType("card");
-          }}
-        >
-          Card
-        </button>
-      </div>
       <div className="flex justify-between items-center shadow-xl px-4 my-6 rounded-xl bg-slate-100">
         <h1 className="text-3xl my-8">Books List</h1>
         <Link to="/books/create">
           <MdOutlineAddBox className="text-sky-800 text-4xl" />
         </Link>
+      </div>
+      <div className="flex justify-center items-center mb-4 gap-x-4">
+        <button
+          className="bg-sky-300 hover:bg-sky-400 px-8 py-2 rounded-lg shadow-lg hover:shadow-xl"
+          onClick={() => {
+            setViewType("table");
+          }}
+        >
+          Table View
+        </button>
+        <button
+          className="bg-sky-300 hover:bg-sky-400 px-9 py-2 rounded-lg shadow-lg hover:shadow-xl"
+          onClick={() => {
+            setViewType("card");
+          }}
+        >
+          Card View
+        </button>
       </div>
       {isLoading ? (
         <Spinner />
